@@ -6,7 +6,7 @@ const testRatio = 0.2;
 const outputs = [0, 0.25, 0.5, 1, 2, 4]
 const numTypes = poke.types.length;
 
-const binaryInputs = Math.ceil(Math.logBase(numTypes, 2));
+const binaryInputs = Math.ceil(math.logBase(numTypes, 2));
 
 let sets = {
 	numerical: {training: [], test: []},
@@ -47,4 +47,4 @@ for (let attackingType in poke.types) {
 	}
 }
 
-console.log('Created training and test data: ' + sets.numerical.training.length + ' training data and ' + set.numerical.test.length + ' test data.');
+console.log('Created training and test data: ' + sets.numerical.training.length + ' training data and ' + sets.numerical.test.length + ' test data.');
